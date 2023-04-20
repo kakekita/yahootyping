@@ -91,11 +91,12 @@ function keydown_e(e) {
 }
 
 function repaint() {
+  var all_t = "";
   var red_t = "";
   var black_t = "";
 
   for (var c in word_r) {
-    if (c <= typeStatus.count1) {
+    /*if (c <= typeStatus.count1) {
       red_t += word_r[c][typeStatus.pat[typeStatus.count1]].slice(
         0,
         typeStatus.count2[c]
@@ -106,9 +107,12 @@ function repaint() {
       black_t += word_r[c][typeStatus.pat[typeStatus.count1]].slice(
         typeStatus.count2[c]
       );
-    }
+    }*/
+    all_t += word_r[c][typeStatus.pat[typeStatus.count1]]
   }
-
+  
+  red_t = all_t;
+  
   document.getElementById("red-text").textContent = red_t;
   document.getElementById("black-text").textContent = black_t;
 }
