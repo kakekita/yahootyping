@@ -108,7 +108,7 @@ function repaint() {
         typeStatus.count2[c]
       );
     }*/
-    all_t += word_r[c][typeStatus.pat[typeStatus.count1]]
+    all_t += word_r[c][typeStatus.pat[c]]
   }
   
   red_t = all_t;
