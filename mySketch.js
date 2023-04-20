@@ -111,7 +111,8 @@ function repaint() {
     all_t += word_r[c][typeStatus.pat[c]]
   }
   
-  red_t = all_t;
+  red_t = word_r[0][typeStatus.pat[0]]
+  black_t = all_t;
   
   document.getElementById("red-text").textContent = red_t;
   document.getElementById("black-text").textContent = black_t;
