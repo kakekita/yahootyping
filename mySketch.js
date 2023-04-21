@@ -136,6 +136,7 @@ function repaint() {
 
   document.getElementById('red-text').textContent = red_t;
   document.getElementById('black-text').textContent = black_t;
+  document.getElementById('debug').textContent = String(getNextKey());
 }
 
 getData();
