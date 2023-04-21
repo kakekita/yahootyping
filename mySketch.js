@@ -69,7 +69,9 @@ function getRomSentLists(hiragana) {
 
 function getNextKey() {
   for (var c in word_r[typeStatus.count1]) {
-    word_r[typeStatus.count1][c]
+    if(word_r[typeStatus.count1][c].split('')[typeStatus.count2[typeStatus.count1]]) {
+
+    }
   }
 }
 
