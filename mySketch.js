@@ -62,9 +62,8 @@ function getRomSentLists(hiragana) {
   word_r = s_rom;
   typeStatus.pat = Array(word_r.length).fill(0);
   typeStatus.count2 = Array(word_r.length).fill(0);
-  typeStatus.count1 = -1;
-  repaint();
   typeStatus.count1 = 0;
+  repaint();
 }
 
 function getNextKey() {
