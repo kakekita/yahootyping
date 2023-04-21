@@ -72,17 +72,16 @@ function keydown_e(e) {
         word_r[typeStatus.count1][c].split("").length - 1
       ) {
         //typeStatus.count2[typeStatus.count1]++;
-        repaint();
         typeStatus.count1++;
         typeStatus.count2[typeStatus.count1] = 0;
         typeStatus.tmp = "";
       } else {
         typeStatus.count2[typeStatus.count1]++;
         typeStatus.tmp += key;
-        repaint();
       }
       typeStatus.hist += key;
       console.log(typeStatus.hist);
+      repaint();
       break;
     }
   }
