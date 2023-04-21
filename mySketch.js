@@ -71,6 +71,7 @@ function getNextKey() {
   for (var c in word_r[typeStatus.count1]) {
     if (word_r[typeStatus.count1][c].indexOf(typeStatus.tmp) != -1) {
       arr.push(word_r[typeStatus.count1][c].split('')[typeStatus.count2[typeStatus.count1]])
+      
     }
   }
 
